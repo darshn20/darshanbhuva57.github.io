@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Farmer SignUp</title>
+</head>
+<body>
+	<h1><strong>Registration</strong></h1>
+    <form action="addcomplaint.html" method="post">
+		<label for="s id">Farmer ID:</label>
+            <input type="text" id="fid" name="fid" ><br><br>
+        <label for="f name">Farmer Name:</label>
+            <input type="text" id="fname" name="fname" ><br><br>
+        <label for="f add">Farmer Address:</label>
+            <textarea id="fadd" name="fadd" ></textarea><br><br>
+        <label for="f mo">Mobile No:</label>
+            <input type="text" id="fmo" name="fmo" ><br><br>
+        <label for="password">Password:</label>
+            <input type="password" id="pass" name="pass" [(ngModel)]="pass"><br><br>
+        <button type="submit">Sign In</button>
+        </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Supplier SignUp</title>
+</head>
+<body>
+	<h1><strong>Registration</strong></h1>
+    <form action="PostAdd.html" method="post">
+		<label for="s id">Supplier ID:</label>
+            <input type="text" id="sid" name="sid" ><br><br>
+        <label for="s name">Supplier Name:</label>
+            <input type="text" id="sname" name="sname" ><br><br>
+        <label for="s add">Supplier Address:</label>
+            <textarea id="sadd" name="sadd" ></textarea><br><br>
+        <label for="s mo">Mobile No:</label>
+            <input type="text" id="smo" name="smo" ><br><br>
+        <label for="password">Password:</label>
+            <input type="password" id="pass" name="pass" [(ngModel)]="pass"><br><br>
+        <button type="submit">Sign In</button>
+        </form>
+</body>
+</html>
