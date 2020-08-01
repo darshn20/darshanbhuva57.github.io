@@ -2,17 +2,63 @@
 <html>
 <head>
 	<title>Supplier Login</title>
+	<link rel="stylesheet" type="text/css" href="css/headerfooter.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" type="image/png" href="images/icons/login.png"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 </head>
 <body>
-	
-	<form action="PostAdd.html">
-		<h1><strong>Supplier Login</strong></h1>
-		<label for="s id"> ID:</label>
-            <input type="text" id="sid" name="sid" ><br><br>
-        <label for="password">Password:</label>
-            <input type="password" id="pass" name="pass"><br><br>
-            <button type="submit">submit</button><br>
-        NewUser<a href="suppliersignup.html">sign up</a>
-	</form>
+	<div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="#">Services</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+	<div class="container-login100" style="background-image: url('images/farm.jpeg');">
+		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+			<form class="login100-form validate-form" action="PostAdd.html">
+				<span class="login100-form-title p-b-37">
+					Sign In
+				</span>
+
+				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter Supplier ID">
+					<input class="input100" type="text" name="username" placeholder="Supplier ID">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+					<input class="input100" type="password" name="pass" placeholder="password">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-login100-form-btn">
+					<button class="login100-form-btn">
+						Sign In
+					</button>
+				</div><br>
+
+				
+				<div class="text-center">
+					New User? <a href="suppliersignup.html" class="txt2 hov1">
+						Sign Up
+					</a>
+				</div>
+			</form>
+
+			
+		</div>
+	</div>
 </body>
 </html>

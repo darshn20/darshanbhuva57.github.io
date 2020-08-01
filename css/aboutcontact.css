@@ -1,0 +1,10 @@
+.detail p{
+
+	font-size: 25px;
+	color: lightgoldenrodyellow;
+}
+body {
+        background-image: url("image/img1.jpg");
+        background-position: center;
+        background-position: 50% 50%;
+    }

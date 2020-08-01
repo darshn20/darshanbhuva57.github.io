@@ -1,0 +1,35 @@
+h1{
+  	padding-left: 430px;
+  	color: #000;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 150px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.gallery a{
+  color: black;
+}
+div.gallery a:hover{
+    color: lightgreen;
+}
+.table{
+	padding-top: 90px;
+  padding-left: 300px;
+}

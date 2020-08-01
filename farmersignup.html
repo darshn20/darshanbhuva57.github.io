@@ -2,21 +2,74 @@
 <html>
 <head>
 	<title>Farmer SignUp</title>
+    <link rel="stylesheet" type="text/css" href="css/headerfooter.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/png" href="images/icons/signup.png"/>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 </head>
 <body>
-	<h1><strong>Registration</strong></h1>
-    <form action="addcomplaint.html" method="get">
-		<label for="s id">Farmer ID:</label>
-            <input type="text" id="fid" name="fid" ><br><br>
-        <label for="f name">Farmer Name:</label>
-            <input type="text" id="fname" name="fname" ><br><br>
-        <label for="f add">Farmer Address:</label>
-            <textarea id="fadd" name="fadd" ></textarea><br><br>
-        <label for="f mo">Mobile No:</label>
-            <input type="text" id="fmo" name="fmo" ><br><br>
-        <label for="password">Password:</label>
-            <input type="password" id="pass" name="pass" [(ngModel)]="pass"><br><br>
-        <button type="submit">Sign In</button>
-        </form>
+	
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="#">Services</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container-login100" style="background-image: url('images/farm.jpeg');">
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+            <form class="login100-form validate-form" action="addcomplaint.html">
+                <span class="login100-form-title p-b-37">
+                    Sign Up
+                </span>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Farmer ID">
+                    <input class="input100" type="text" name="fid" placeholder="Farmer ID">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Farmer Name">
+                    <input class="input100" type="text" name="fname" placeholder="Farmer Name">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Farmer Address">
+                    <textarea class="input100"  name="faddress" placeholder="Farmer Address"></textarea> 
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Farmer No">
+                    <input class="input100" type="text" name="fnumber" placeholder="Mobile No.">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+                    <input class="input100" type="password" name="fpass" placeholder="password">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Sign In
+                    </button>
+                </div>
+
+                
+            </form>
+
+            
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,23 @@
+    .fixed-header{
+        width: 100%;        
+        background: rgba(47, 54, 64,0.7);
+        padding: 10px 0;
+        color: #fff;
+        } 
+        .fixed-footer{
+        width: 100%;        
+        background: rgba(47, 54, 64,0.7);
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    
