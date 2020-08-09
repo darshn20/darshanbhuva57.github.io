@@ -6,9 +6,10 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="images/icons/signup.png"/>
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+
+    
 </head>
 <body>
 	
@@ -24,47 +25,54 @@
     </div>
     <div class="container-login100" style="background-image: url('images/farm.jpeg');">
         <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
-            <form class="login100-form validate-form" action="addcomplaint.html">
+            <!--<form class="login100-form validate-form" action="#" onsubmit="display()">-->
                 <span class="login100-form-title p-b-37">
                     Sign Up
                 </span>
 
                 <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Farmer ID">
-                    <input class="input100" type="text" name="fid" placeholder="Farmer ID">
+                    <input class="input100" type="text" id="id" placeholder="Farmer ID">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Farmer Name">
-                    <input class="input100" type="text" name="fname" placeholder="Farmer Name">
+                    <input class="input100" type="text" id="name" placeholder="Farmer Name">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Farmer Address">
-                    <textarea class="input100"  name="faddress" placeholder="Farmer Address"></textarea> 
+                    <textarea class="input100" id="address" placeholder="Farmer Address"></textarea> 
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Farmer No">
-                    <input class="input100" type="text" name="fnumber" placeholder="Mobile No.">
+                    <input class="input100" type="text" id="number" placeholder="Mobile No.">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
-                    <input class="input100" type="password" name="fpass" placeholder="password">
+                    <input class="input100" type="password" id="pass" placeholder="password">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="container-login100-form-btn">
-                    <button class="login100-form-btn">
-                        Sign In
+                    <button class="login100-form-btn" onclick="display()">
+                        Submit
                     </button>
                 </div>
-
-                
-            </form>
-
+                <br>
+            <p id="msg"></p>
+            <p id="did"></p>
+            <p id="dname"></p>
+            <p id="daddress"></p>
+            <p id="dnumber"></p>
+            <p id="dpass"></p>
             
         </div>
     </div>
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2020 Your Company</div>        
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
