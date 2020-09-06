@@ -13,11 +13,19 @@
     .fixed-footer{
         bottom: 0;
     }
+    .list{
+        background-color: rgba(178, 190, 195,0.7);
+        margin-right: auto;
+         margin-left: auto;
+        padding-right: 15px;
+         padding-left: 15px;
+         width: 100%;
+    }
     /* Some more styles to beutify this example */
-    nav a{
+    /*nav a{
         color: #fff;
         text-decoration: none;
         padding: 7px 25px;
         display: inline-block;
-    }
+    }*/
     
