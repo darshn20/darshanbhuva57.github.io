@@ -1,21 +1,35 @@
 function display() {
-	//document.getElementById("id").innerHTML = document.getElementById('fid').value;
 
 	var address = document.getElementById('address').value;
-	document.getElementById("daddress").innerHTML = "Address:  "+address;
-
+	if(address==""){
+		alert("Enter Address");
+		document.getElementById('address').value="";
+	}
+	//login100-form-btn
 	var number = document.getElementById('number').value;
-	document.getElementById("dnumber").innerHTML = "Mobile No:  "+number;
+	if(number=="" || isNaN(number) || number > 999999999 || number < 600000000){
+		alert("Enter Valid Number");
+		document.getElementById('number').value="";
+		
+	}
 
 	var pass = document.getElementById('pass').value;
-	document.getElementById("dpass").innerHTML = "Password:  "+pass;
-	document.getElementById("msg").innerHTML = "Data Saved";
-
+	if(pass==""){
+		alert("Enter Password");
+		document.getElementById('pass').value="";
+	}
+	
 	var id = document.getElementById('id').value;
-	document.getElementById("did").innerHTML = "Id:  "+id;
+	if(id==""){
+		alert("Enter Id");
+		document.getElementById('id').value="";
+	}
 
 	var name = document.getElementById('name').value;
-	document.getElementById("dname").innerHTML = "Name:  "+name;
-
+	if(name=""){
+		alert("Enter Name");
+		document.getElementById('name').value="";
+	}
+	
 
 }

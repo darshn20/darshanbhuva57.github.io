@@ -20,38 +20,38 @@
             </nav>
     <div class="container-login100" style="background-image: url('images/farm.jpeg');">
         <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
-            <!--<form class="login100-form validate-form" action="PostAdd.html">-->
+            <form class="login100-form validate-form" action="PostAdd.html">
                 <span class="login100-form-title p-b-37">
                     Sign Up
                 </span>
 
-                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Supplier ID">
-                    <input class="input100" type="text" id="id" placeholder="Supplier ID">
+                <div class="wrap-input100 validate-input m-b-20" >
+                    <input class="input100" type="text" id="id" placeholder="Supplier ID" required autofocus>
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Supplier Name">
-                    <input class="input100" type="text" id="name" placeholder="Supplier Name">
+                <div class="wrap-input100 validate-input m-b-20" >
+                    <input class="input100" type="text" id="name" placeholder="Supplier Name" required autofocus>
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Supplier Address">
-                    <textarea class="input100"  id="address" placeholder="Supplier Address"></textarea> 
+                <div class="wrap-input100 validate-input m-b-20" >
+                    <textarea class="input100"  id="address" placeholder="Supplier Address" required autofocus></textarea> 
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter Supplier No">
-                    <input class="input100" type="text" id="number" placeholder="Mobile No.">
+                <div class="wrap-input100 validate-input m-b-20" >
+                    <input class="input100" type="text" id="number" placeholder="Mobile No." required autofocus>
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
-                    <input class="input100" type="password" id="pass" placeholder="password">
+                <div class="wrap-input100 validate-input m-b-25" >
+                    <input class="input100" type="password" id="pass" placeholder="password" required autofocus>
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="container-login100-form-btn">
-                    <button class="login100-form-btn" onclick="display()">
+                    <button class="btn btn-primary btn-lg" onclick="display()">
                         Sign In
                     </button>
                 </div>
@@ -59,12 +59,7 @@
 
                 
             <br>
-            <p id="msg"></p>
-            <p id="did"></p>
-            <p id="dname"></p>
-            <p id="daddress"></p>
-            <p id="dnumber"></p>
-            <p id="dpass"></p>
+            
             
         </div>
     </div>
