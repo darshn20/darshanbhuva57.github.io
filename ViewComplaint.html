@@ -9,7 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css"> 
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script src="js/jquery_main.js"></script>-->
 	<style type="text/css">
 		.table{
 			
@@ -22,16 +23,48 @@
 			background-color: white; 
 		}
 	</style>
+	<script>
+    	$(document).ready(function(){
+
+
+  $("table").hide();
+  
+  
+
+  
+
+  $("#view").click(function(){
+    $("table").show(1000);
+  });
+
+  
+  
+
+
+  $("tr").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "white");
+    }, 
+    click: function(){
+      $(this).css("background-color", "lightblue");
+    }  
+  });
+  
+});
+    </script>
 </head>
 <body>
-	<nav class="navbar  navbar-expand-sm  navbar-light">
-                <a class="nav-link h6" href="index.html">Home</a>
+	<nav class="navbar  navbar-expand-sm  navbar-light" >
+                <a class="nav-link h6" href="index.html" >Home</a>
                 <a class="nav-link h6" href="aboutus.html">About</a>
                 <a class="nav-link h6" href="#">Services</a>
                 <a class="nav-link h6" href="contactus.html">Contact Us</a>
             </nav>
 	
-        <nav class="navbar justify-content-center bg-dark navbar-dark">
+        <nav class="navbar justify-content-center bg-dark navbar-dark" >
 			<a class="nav-link nav-linkk h6"href="addcomplaint.html">Add Complaint</a>
 			<a class="nav-link  nav-linkk h6"href="ViewComplaint.html">View Complaint</a>
 			<a class="nav-link  nav-linkk h6"href="farmingtips.html">Farming Tips</a>
@@ -42,7 +75,7 @@
 	
 	
 	<div class="container-login100" style="background-image: url('images/farm.jpeg');">
-        <div class="container p-3 my-3 border ">
+        <div class="container p-3 my-3 border " id="view">
         	<span class="login100-form-title p-b-37">
                     View Complaint
                 </span>
@@ -96,5 +129,7 @@
 <nav class="navbar  navbar-sm navbar navbar-light">
        <p class="h6">Copyright &copy; 2020 Your Company </p>         
     </nav>
+    
+    
 </body>
 </html>
